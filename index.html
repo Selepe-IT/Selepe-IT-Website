@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selepe Teboho</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav id="mynav">
+      <div class="nav-container">
+        <div class="brand">MySite</div>
+        <button class="hamburger" onclick="toggleNav()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li ><a href="#about" onclick="toggleNav()">About</a></li>
+          <li><a href="#skills" onclick="toggleNav()">Skills</a></li>
+          <li><a href="#achievements" onclick="toggleNav()">Achievements</a></li>
+          <li><a href="#certificates" onclick="toggleNav()">Certificates</a></li>
+          <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+          <li><button id="theme-toggle" onclick="toggleNav()">🌙</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="box fade-in">
+        <h1 class="fade-in-text" style="text-align: center;">Hi, I am Selepe Teboho</h1>
+        <p class="intro fade-in-text">
+            I’m a passionate third-year Information Technology student graduating in 2026, with a strong foundation in software development using Java and growing experience in web development with HTML, CSS, and JavaScript.
+            I am currently learning the Spring Boot framework and actively improving my JavaScript skills. I aim to become a full-stack developer, combining backend logic with clean, responsive frontend design. I learn best by helping others and enjoy solving real-world problems through code.
+        </p>
+        <div class="boxdiv">
+          <div class="profile fade-in">
+            <img src="./images/profile.jpeg" alt="Profile Picture" class="profile-img clickable" onclick="openLightbox(this)" />
+          </div>
+          <div class="stack fade-in-text">
+            <ul>
+                <li>Java | Spring Boot(learning) | JPA | REST APIs</li>
+                <li>HTML | CSS | JavaScript (learning) | React (next)</li>
+                <li>Git | GitHub | Postman | Docker (learning)</li>
+                <li>MySQL | MariaDB | Maven</li>
+                <li>Figma | Agile Practices</li>
+            </ul>
+          </div>
+        </div>
+        <div class="button-group fade-in">
+          <button onclick="location.href='#projects'" id="more">More</button>
+          <button onclick="location.href='#contact'" class="contact">Contact</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="box fade-in">
+        <h1 class="fade-in-text">Skills</h1>
+        <div class="fade-in-text">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Java (Core, OOP, Swing)</li>
+            <li>Spring Boot (learning)</li>
+            <li>Web Development – HTML, CSS, JavaScript(learning)</li>
+            <li>Git & GitHub (version control)</li>
+            <li>SQL & Database Fundamentals</li>
+            <li>UI Design – Figma</li>
+        </ul>
+        </div>
+        <div class="fade-in-text" style="margin-top: 20px;">
+            <h3>Personal Strengths</h3>
+            <ul>
+                <li>Passionate about Java and solving real-world problems</li>
+                <li>Fast learner — I learn best when helping others</li>
+                <li>Enjoy debugging, solving challenges & logical thinking</li>
+                <li>Team collaborator with strong communication skills</li>
+            </ul>
+        </div>
+        <div class="fade-in-text" style="margin-top: 20px;">
+            <h3>Hobbies & Interests</h3>
+            <ul>
+                <li>Chess – strategy and focus</li>
+                <li>Soccer – teamwork and endurance</li>
+                <li>Exploring new tech & reading developer blogs</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+   
+    <!-- Achievements -->
+    <section id="achievements" class="box fade-in">
+      <h2>Achievements</h2>
+
+      <div class="achievement">
+        <img src="assets/icons/ibm.png" alt="IBM Icon" class="achievement-image clickable" onclick="openLightbox(this)">
+        <div class="achievement-content">
+          <div class="achievement-title">IBM Z Global Datathon 2024 – Participant</div>
+          <p class="achievement-desc">
+            Participated in my first international datathon, gaining hands-on experience in data analytics and problem-solving using IBM Z technologies. Mind you
+            this was my first hackathon, so I did not know anything. But luckly some students from vut had some experience so they helped us. The day before we had 
+            to configure our working system, I got that covered but at the day of the event the environment was not responding at all.
+          </p>
+          <hr>
+          <!-- Gallery for additional images -->
+          <div class="achievement-gallery">
+            <img src="images/ibm1.jpeg" alt="" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="images/ibm2.jpeg" alt="" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="images/ibm3.jpeg" alt="" class="gallery-img clickable" onclick="openLightbox(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement">
+        <img src="images/Geek.jpeg" alt="Microsoft Icon" class="achievement-image clickable" onclick="openLightbox(this)">
+        <div class="achievement-content">
+          <div class="achievement-title">Microsoft AI Skills Hackathon 2025 – Participant</div>
+          <p class="achievement-desc">
+            Engaged in a global AI-focused hackathon by Microsoft, exploring practical applications of artificial intelligence. This was my third hackathon but different approach, for 
+            this hackathon we had everything to build the application, the idea was good but the problem was that we did not know what to take and what not. The hackathon had mentors and everything 
+            but I was scared to ask for help.
+          </p>
+          <hr>
+          <!-- Gallery for additional images -->
+          <div class="achievement-gallery">
+            <img src="images/AIOne.jpg" alt="Datathon 1" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="images/AITwo.jpg" alt="Datathon 2" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="images/AIThree.jpg" alt="Datathon 3" class="gallery-img clickable" onclick="openLightbox(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement">
+        <img src="images/Teboho Selepe(GKSS-VUT).png" alt="Chairperson Icon" class="achievement-image clickable" onclick="openLightbox(this)">
+        <div class="achievement-content">
+          <div class="achievement-title">Chairperson – Geekulcha Student Society (2025)</div>
+          <p class="achievement-desc">
+            Elected as Chairperson, leading the society in organizing events, fostering innovation, and building a student-driven tech community.
+          </p>
+          <hr>
+          <!-- Gallery for additional images -->
+          <!-- <div class="achievement-gallery">
+            <img src="assets/gallery/ibm1.jpg" alt="Datathon 1" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="assets/gallery/ibm2.jpg" alt="Datathon 2" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="assets/gallery/ibm3.jpg" alt="Datathon 3" class="gallery-img clickable" onclick="openLightbox(this)">
+          </div> -->
+        </div>
+      </div>
+
+      <div class="achievement">
+        <img src="assets/icons/innovation.png" alt="Innovation Icon" class="achievement-image clickable" onclick="openLightbox(this)">
+        <div class="achievement-content">
+          <div class="achievement-title">Geekulcha Innovation Challenge 2025 – Participant</div>
+          <!-- <p class="achievement-desc">
+            Participated in a national innovation challenge focused on impactful tech solutions through design thinking and problem-solving.
+          </p> -->
+          <hr>
+          <!-- Gallery for additional images -->
+          <!-- <div class="achievement-gallery">
+            <img src="assets/gallery/ibm1.jpg" alt="Datathon 1" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="assets/gallery/ibm2.jpg" alt="Datathon 2" class="gallery-img clickable" onclick="openLightbox(this)">
+            <img src="assets/gallery/ibm3.jpg" alt="Datathon 3" class="gallery-img clickable" onclick="openLightbox(this)">
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+     <section id="certificates">
+      <div class="box fade-in">
+        <h1 class="fade-in-text">Certificates</h1>
+        <div class="certificates-grid fade-in">
+          <div class="certificate-card">
+            <h3>Hackathons</h3>
+            <p>lkdmkfwjd.mkjd,dd..d;d</p>
+            <hr>
+            <!-- Gallery for additional images -->
+            <div class="achievement-gallery">
+              <img src="images/certs/IBM Z Datathon 2024/Hack2skill-Certificate.png" alt="Datathon 1" class="gallery-img clickable" onclick="openLightbox(this)">
+              <img src="images/certs/IBM Z Datathon 2024/Hack2skill-Certificate_2.png" alt="Datathon 2" class="gallery-img clickable" onclick="openLightbox(this)">
+              <img src="assets/gallery/ibm3.jpg" alt="Datathon 3" class="gallery-img clickable" onclick="openLightbox(this)">
+            </div>
+          </div>
+          <div class="certificate-card">
+            <h3>Networking</h3>
+            <p><a href="images/certs/vut/IT Essentials_ PC Hardware and Software.pdf" target="_blank" rel="noopener">IT Essentials_ PC Hardware and Software</a></p><hr>
+            <p><a href="images/certs/vut/CCNAv7_ Introduction to Networks.pdf" target="_blank" rel="noopener">CCNAv7 Introduction to Networks</a></p><hr>
+            <p><a href="images/certs/vut/CCNAv7_ Switching, Routing, and Wireless Essentials.pdf" target="_blank" rel="noopener">CCNAv7 Switching, Routing, and Wireless Essentials</a></p>
+
+          </div>
+          <div class="certificate-card">
+            <h3>AI</h3>
+          </div>
+          <div class="certificate-card">
+            <h3>Linux</h3>
+            <p><a href="images/certs/linux/Partner_ NDG Linux Essentials.pdf" target="_blank" rel="noopener">Partner NDG Linux Essentials</a></p><hr>
+            <p><a href="images/certs/linux/Partner_ NDG Linux Unhatched.pdf" target="_blank" rel="noopener">Partner NDG Linux Unhatched</a></p>
+
+          </div>
+        </div>
+
+      </div>
+
+     </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="box fade-in">
+            <h1 class="fade-in-text">Projects</h1>
+            <div class="projects-grid fade-in">
+              <div class="project-card inProgress">
+                  <h3>Email Receiver (In Progress)</h3>
+                  <p>An application designed to connect to an email server and automatically retrieve, read, and process incoming emails for specific triggers or tasks.</p>
+                  <p><strong>Status:</strong> Still developing core logic and testing integrations.</p>
+                  <p><strong>Tools:</strong> Java, Spring Boot, JavaMail API, Postman, IntelliJ</p>
+              </div>
+              <div class="project-card inProgress">
+                  <h3>Spring Boot CRUD Application</h3>
+                  <p>A web app performing CRUD operations using RESTful APIs and layered architecture (Controller, Service, Repository).</p>
+                  <p><strong>Status:</strong> Currently developing and testing core functionality.</p>
+                  <p><strong>Tools:</strong> Java, Spring Boot, MySQL, Postman, IntelliJ</p>
+              </div>
+              <div class="project-card">
+                  <h3>ATM Interface – Java Console App</h3>
+                  <p>A console-based ATM simulation with features like withdrawal, deposit, transfer, and transaction history.</p>
+                  <p><strong>Tools:</strong> Java, Netbeans</p>
+                  <a href="https://github.com/cyberaxeman/OIBSIP.git" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+              <div class="project-card">
+                  <h3>Guess the Number - Java GUI Game</h3>
+                  <p>A fun guessing game (1–100) with 2 rounds and feedback using a Swing GUI.</p>
+                  <p><strong>Tools:</strong> Java, Swing, Netbeans</p>
+                  <a href="https://github.com/cyberaxeman/OIBSIP_.git" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="box fade-in">
+            <h1 class="fade-in-text">Contact Me</h1>
+            <form action="https://formspree.io/f/xwpbwnne" method="POST" class="fade-in-text contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Selepe Teboho. All rights reserved.</p>
+   
+    <p>
+      <a href="mailto:tejahteboho@gmail.com">tejahteboho@gmail.com</a> | 
+      <a href="https://github.com/cyberaxeman" target="_blank" rel="noopener">GitHub</a> | 
+      <a href="https://linkedin.com/in/teboho-selepe-841abb23b" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged Achievement Image">
+</div>
+
+</html>
